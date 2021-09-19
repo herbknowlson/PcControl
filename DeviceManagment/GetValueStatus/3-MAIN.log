@@ -1,0 +1,18 @@
+9/8/2021 11:27:35 PM
+device ID=723     label = "Bed room button - he"                 attributeName = battery      value = 76
+device ID=122     label = "Outside back door"                    attributeName = battery      value = 85
+device ID=121     label = "Outside front door"                   attributeName = battery      value = 99
+device ID=1649    label = "Outside garage door"                  attributeName = battery      value = 100
+device ID=1642    label = "Bedroom hall closet sensor"           attributeName = battery      value = 85
+device ID=299     label = "Master closet motion sensor - he"     attributeName = battery      value = 100
+device ID=58      label = "Bed room motion sensor - he"          attributeName = battery      value = 100
+device ID=303     label = "Entry hall motion sensor - he"        attributeName = battery      value = 100
+device ID=481     label = "Entry hall motion sensor 2 - he"      attributeName = battery      value = 87
+device ID=869     label = "Music room motion sensor"             attributeName = battery      value = 100
+device ID=515     label = "Stairs motion sensor 1 - he"          attributeName = battery      value = 87
+device ID=516     label = "Stairs motion sensor 2 - he"          attributeName = battery      value = 87
+device ID=731     label = "Master bath motion sensor - he"       attributeName = battery      value = 100
+device ID=780     label = "Music room button - he"               attributeName = battery      value = 66
+device ID=387     label = "Garage motion sensor - he"            attributeName = battery      value = 100
+device ID=83      label = "Guest hall motion sensor - he"        attributeName = battery      value = 87
+deviceCount = 16

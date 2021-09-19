@@ -1,0 +1,1 @@
+"C:\Program Files\VideoLAN\VLC\vlc.exe" rtsp://phhk2000:guitar01@192.168.2.81/live

@@ -1,0 +1,46 @@
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+---------------------------------------------------------------------------
+ Check the following devices are currently active in Hubitat Maker API
+---------------------------------------------------------------------------
+1 -  Alexa announce back door                     	devId: 1477	Alexa announce back door
+2 -  Alexa announce front door                    	devId: 1478	Alexa announce front door
+3 -  Alexa announce garage interior door          	devId: 1644	Alexa announce garage interior door
+4 -  Alexa announce outside garage door           	devId: 1641	Alexa announce outside garage door
+---------------------------------------------------------------------------
+5 -  Alexa move the mouse                         	devId: 1643	Alexa move the mouse
+6 -  Alexa recycle Wyze cams                      	devId: 1654	Alexa recycle Wyze cams
+7 -  Alexa show me the calendar                   	devId: 1626	Alexa show me the calendar
+8 -  Alexa show me the cameras                    	devId: 1624	Alexa show me the cameras
+9 -  Alexa show me the menu                       	devId: 1645	Alexa show me the menu
+10 -  Alexa show me the music                      	devId: 1625	Alexa show me the music
+11 -  Alexa show me the photos                     	devId: 1648	Alexa show me the photos
+12 -  Alexa show me the security log               	devId: 1646	Alexa show me the security log
+13 -  Alexa show me the security status            	devId: 1639	Alexa show me the security status
+14 -  Alexa show me the weather                    	devId: 1622	Alexa show me the weather
+15 -  Alexa show me Linda's music                  	devId: 1652	Alexa show me Linda's music
+16 -  Alexa show me YouTube                        	devId: 1653	Alexa show me YouTube
+----------------------------------------------------------------------
+17 -  Security log - outside back motion STOPPED   	devId: 1636	Security log - outside back motion STOPPED
+18 -  Security log - outside back motion DETECTED  	devId: 1635	Security log - outside back motion DETECTED
+19 -  Security log - outside front motion STOPPED  	devId: 1634	Security log - outside front motion STOPPED
+20 -  Security log - outside front motion DETECTED 	devId: 1633	Security log - outside front motion DETECTED
+21 -  Security log - garage door CLOSED            	devId: 1632	Security log - garage door CLOSED
+22 -  Security log - garage door OPEN              	devId: 1631	Security log - garage door OPEN
+23 -  Security log - back door CLOSED              	devId: 1630	Security log - back door CLOSED
+24 -  Security log - back door OPEN                	devId: 1629	Security log - back door OPEN
+25 -  Security log - front door CLOSED             	devId: 1628	Security log - front door CLOSED
+26 -  Security log - front door OPEN               	devId: 1627	Security log - front door OPEN
+----------------------------------------------------------------------
+27 -  PC control security                          	devId: 1623	PC control security
+28 -  Outside garage door                          	devId: 1649	Outside garage door
+----------------------------------------------------------------------
+29 -  Wyze cam east outlet                         	devId: 1650	Wyze cam east outlet
+30 -  Wyze cam west outlet                         	devId: 1651	Wyze cam west outlet
+----------------------------------------------------------------------
+31 -  Master closet motion sensor - he             	devId: 299	Master closet motion sensor - he
+    {"id":"299","name":"Generic Zigbee Motion Sensor","label":"Master closet motion sensor - he","type":"Generic Zigbee Motion Sensor","attributes":[{"name":"motion","currentValue":"inactive","dataType":"ENUM","values":["inactive","active"]},{"name":"temperature","currentValue":75.22,"dataType":"NUMBER"},{"name":"battery","currentValue":100,"dataType":"NUMBER"}],"capabilities":["MotionSensor",{"attributes":[{"name":"motion","dataType":null}]},"Configuration","Refresh","Battery",{"attributes":[{"name":"battery","dataType":null}]},"TemperatureMeasurement",{"attributes":[{"name":"temperature","dataType":null}]},"Sensor"],"commands":["configure","refresh"]}
+----------------------------------------------------------------------
+deviceCount: 31
+NOT_FOUNDcount: 
