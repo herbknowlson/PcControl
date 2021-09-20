@@ -8,6 +8,10 @@ Wscript.Echo "            Script name: " & Wscript.ScriptName
 WScript.Echo "-------------------------------------------------------------"
 Wscript.Echo "Script path: " & Wscript.ScriptFullName
 
+Dim myPath
+myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
+Wscript.Echo myPath
+
 Dim curlCMD
 curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1645?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
 Set oShell = WScript.CreateObject ("WScript.shell")
@@ -31,7 +35,7 @@ else
   WScript.Echo "Do something"
   curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1645/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
   oShell.Exec(curlCommand)
-  oShell.Run "D:\Dropbox\PcControl\AlexaShowMe\menu.bat - Shortcut.lnk",0
+  oShell.Run myPath+"\PcControl\AlexaShowMe\menu.bat - Shortcut.lnk",0
 End If
 
 WScript.Quit

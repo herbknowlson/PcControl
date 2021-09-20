@@ -17,9 +17,6 @@ if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
 )
 
-if %executionPaused%=="YES" goto start
-set fileName=C:\Users\herbk\Desktop\counters\loop2Counter.txt
-cscript %myPath%"\PcControl\Dashboard\resetLoopCounter.vbs"
 :start
 if %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
@@ -31,18 +28,21 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 2
   ECHO =============================================================================
+
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallWeather.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallCameras.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCalendar.vbs"
+  
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallMusic.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallLindaMusic.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallMenu.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallSecurityLog.vbs"
 
-  cscript %myPath%"\PcControl\Dashboard\updateLoop2Counter.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCalendar.vbs"
+
   ECHO =============================================================================
   ECHO                          END LOOP 2
   ECHO =============================================================================
+ cscript %myPath%"\PcControl\Dashboard\updateLoop2Counter.vbs"
 :skip_it
   TIMEOUT %LOOP_TIMEOUT%
 

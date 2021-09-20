@@ -1,7 +1,7 @@
 @ECHO OFF  
 rem Choose your path
-set myPath=D:\Dropbox
-rem set myPath=C:\Users\herbk\Dropbox 
+set myPath=D:\Dropbox\gitHub
+rem set myPath=C:\Users\herbk\Dropbox\gitHub
 
 powershell (Get-Process cmd)
                                                                              

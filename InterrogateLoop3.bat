@@ -18,11 +18,6 @@ if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
 )
 
-if %executionPaused%=="YES" goto start
-
-set fileName=C:\Users\herbk\Desktop\counters\loop3Counter.txt
-cscript %myPath%"\PcControl\Dashboard\resetLoopCounter.vbs"
-
 :start
 if %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
@@ -39,26 +34,20 @@ if %executionPaused%=="YES" (
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallPhotos.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallYouTube.vbs"
  
- 
   cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionDETECTED.vbs"
   cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionSTOPPED.vbs"
   cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionDETECTED.vbs"
   cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionSTOPPED.vbs"
 
-rem ----------------------------------------------------------------------------
-rem                        Window vs Console
-rem
-rem  wscript shows popups
-rem ----------------------------------------------------------------------------
-  
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallChrome.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallDashboard.vbs"
   
-  cscript %myPath%"\PcControl\Dashboard\updateLoop3Counter.vbs"
   cscript %myPath%"\PcControl\TimedAction\InterrogateSmartHomeActionNeeded.vbs"
+
   ECHO =============================================================================
   ECHO                           END LOOP 3
   ECHO =============================================================================
+  cscript %myPath%"\PcControl\Dashboard\updateLoop3Counter.vbs"
 :skip_it
   TIMEOUT %LOOP_TIMEOUT%
 

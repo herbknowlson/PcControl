@@ -63,7 +63,6 @@ rem ============================================================================
   oShell.Exec(curlCommand)
   prepareForAction
   oShell.Run myPath+"\PcControl\TimedAction\actionLogging.bat - Shortcut",0,true
- rem  oShell.Run myPath+"\PcControl\Dashboard\readLoop1Counter.vbs",0,false
  rem oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction01,vbs",0,false
  rem oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction02,vbs",0,false
  rem  oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction03,vbs",0,false

@@ -7,6 +7,11 @@ WScript.Echo "-------------------------------------------------------------"
 Wscript.Echo "            Script name: " & Wscript.ScriptName
 WScript.Echo "-------------------------------------------------------------"
 Wscript.Echo "Script path: " & Wscript.ScriptFullName
+
+Dim myPath
+myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
+Wscript.Echo myPath
+
 Dim curlCMD
 curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1646?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
 Set oShell = WScript.CreateObject ("WScript.shell")
@@ -28,7 +33,7 @@ If currentValue = "off" Then
   WScript.Echo "Nothing to do"
 else
   WScript.Echo "Do something"
-  oShell.Run "D:\Dropbox\PcControl\AlexaShowMe\securityLog.bat - Shortcut.lnk",0
+  oShell.Run myPath+"\PcControl\AlexaShowMe\securityLog.bat - Shortcut.lnk",0
   curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1646/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
   oShell.Exec(curlCommand)
 End If

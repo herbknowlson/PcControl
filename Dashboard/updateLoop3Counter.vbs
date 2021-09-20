@@ -9,8 +9,9 @@ Wscript.Echo "Script path: " & Wscript.ScriptFullName
 rem =============================================================================
 rem                  Get Environmental Variable(s) from parent process
 rem =============================================================================
-Set oShell = WScript.CreateObject ("WScript.shell")
-fileName = oShell.Environment("Process").Item("fileName")
+rem Set oShell = WScript.CreateObject ("WScript.shell")
+rem fileName = oShell.Environment("Process").Item("fileName")
+fileName = "C:\Users\herbk\Desktop\counters\loop3Counter.txt"
 Wscript.Echo "fileName = " + fileName
 
 rem ===========================================================================

@@ -8,7 +8,7 @@ myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
 Wscript.Echo myPath
 
 rem Choose your path:
-myPath = "D:\Dropbox"
+rem myPath = "D:\Dropbox"
 rem myPath = "C:\Users\herbk\Dropbox"
 
 rem WScript.Echo "Do something"

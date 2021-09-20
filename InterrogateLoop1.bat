@@ -16,23 +16,9 @@ if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
 )
 
-if %executionPaused%=="YES" goto start
-
-rem -----------------------------------------------------------
-rem         One time actions to perform outside the loop
-rem -----------------------------------------------------------
-rem           Reset the actionID to 0
-rem           Write hard coded values to Google sheet
-rem ------------------------------------------------------------
-START %myPath%"\PcControl\TimedAction\0-timedActionReset.bat - Shortcut.lnk"
-
-set fileName=C:\Users\herbk\Desktop\counters\loop1Counter.txt
-cscript %myPath%"\PcControl\Dashboard\resetLoopCounter.vbs
-
 START %myPath%"\PcControl\InterrogateLoop2.bat - Shortcut.lnk"
 START %myPath%"\PcControl\InterrogateLoop3.bat - Shortcut.lnk"
 
-rem cscript %myPath%\PcControl\DeviceManagment\GetValueBatteryLevel\2-LOOP.vbs
 :start
 if %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
@@ -52,11 +38,12 @@ if %executionPaused%=="YES" (
   cscript %myPath%"\PcControl\SecurityLog\GarageDoorOPEN.vbs"
   cscript %myPath%"\PcControl\SecurityLog\GarageDoorCLOSED.vbs"
   cscript %myPath%\PcControl\Wyze\RollCallWyzeCam.vbs
-  cscript %myPath%"\PcControl\Dashboard\updateLoop1Counter.vbs" 
   cscript %myPath%"\PcControl\RestartTheLoops\InterrogateRestartTheLoops.vbs
+  
   ECHO =============================================================================
   ECHO                         END LOOP 1
   ECHO =============================================================================
+  cscript %myPath%"\PcControl\Dashboard\updateLoop1Counter.vbs" 
 :skip_it
   TIMEOUT %LOOP_TIMEOUT%
 

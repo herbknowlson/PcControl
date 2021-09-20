@@ -1,5 +1,5 @@
 rem ---------------------------------------------------------------------------
-rem                              START HERE for reset 
+rem                              START HERE for no reset 
 rem ---------------------------------------------------------------------------
 rem Note: This is the parent process set the envirnmental variables 
 
@@ -7,6 +7,7 @@ set LOOP_TIMEOUT=3
 set myPath=D:\Dropbox\gitHub
 rem set myPath=C:\Users\herbk\Dropbox\gitHub
 
+goto skip_it
 rem -----------------------------------------------------------
 rem         One time actions to perform outside the loop
 rem -----------------------------------------------------------
@@ -23,7 +24,7 @@ set fileName=C:\Users\herbk\Desktop\counters\loop3Counter.txt
 cscript %myPath%"\PcControl\Dashboard\resetLoopCounter.vbs"
 
 rem cscript %myPath%\PcControl\DeviceManagment\GetValueBatteryLevel\2-LOOP.vbs
-
+:skip_it
 rem ------------------------------------------------------------------
 rem      Get the current time to check for a pause in execution
 rem ------------------------------------------------------------------
