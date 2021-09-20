@@ -5,10 +5,10 @@ rem ---------------------------------------------------------------------------
 rem Choose your path: Note: this was set in Parent Process (0-START_HERE) only used here for testing
 rem set myPath=D:\Dropbox
 rem set myPath=C:\Users\herbk\Dropbox
+
 rem ------------------------------------------------------------------
 rem     check for a pause in execution
 rem ------------------------------------------------------------------
-rem START %myPath%"\PcControl\checkIfExecutionPaused.bat"
 if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
   echo Current date and time: %yyyy-mm-dd% %time%
