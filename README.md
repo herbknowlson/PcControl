@@ -7,6 +7,7 @@ For example saying Alexa show me the weather will open the MyRadar app on the PC
 Note: this is different than simple controlling the computer with a remote control see  1 - Control your PC with a remote
 
 Types of computer control -
+
 1 - Control PC with a remote
 
 2 - Control smart devices with a remote and a computer
