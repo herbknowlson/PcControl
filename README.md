@@ -2,11 +2,12 @@ Description -
 Do things using a computer in addition to your Hubitat hub. 
 Control your computer and Hubitat using a remote, Hubitat app, Alexa, a timer etc.
 
-Since Alexa can communicate with Hubitat using the Hubitat skill,  Alexa can control the computer thru Hubitat
+Since Alexa can communicate with Hubitat using the Hubitat skill,  Alexa can control the computer thru Hubitat.
 For example saying Alexa show me the weather will open the MyRadar app on the PC. 
 Note: this is different than simple controlling the computer with a remote control see  1 - Control your PC with a remote
 
 Types of computer control -
+
 1 - Control PC with a remote
 
 2 - Control smart devices with a remote and a computer
