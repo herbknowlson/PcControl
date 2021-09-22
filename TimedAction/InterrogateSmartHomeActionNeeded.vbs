@@ -44,12 +44,6 @@ rem ----------------------------------------------------------------------------
     Exit Do
   End If
 Loop
-rem =============================================================================
-rem         For testing force it to do something 
-rem =============================================================================
-rem currentValue = "forceRun"
-rem myPath="D:\Dropbox"
-rem myPath="C:\Users\herbk\Dropbox"
 
 rem WScript.Echo "current value: " + currentValue
 If currentValue = "off" Then
@@ -63,9 +57,6 @@ rem ============================================================================
   oShell.Exec(curlCommand)
   prepareForAction
   oShell.Run myPath+"\PcControl\TimedAction\actionLogging.bat - Shortcut",0,true
- rem oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction01,vbs",0,false
- rem oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction02,vbs",0,false
- rem  oShell.Run myPath+"\PcControl\SmartHomeActionTimer\RollCallSmartHomeAction03,vbs",0,false
 End If
 
 rem =============================================================================
@@ -145,8 +136,6 @@ Function loopCounter (fileName, nameOfEnvironmentalVariable)
   rem                  Get Environmental Variable(s) from parent process
   rem =============================================================================
   Set oShell = WScript.CreateObject ("WScript.shell")
-  rem fileName = oShell.Environment("Process").Item("fileName")
-  rem fileName=myPath+"\PcControl\Dashboard\loop1Counter.txt"
   Wscript.Echo " Got here - 1a"
   Wscript.Echo "fileName = " + fileName
   rem ===========================================================================

@@ -1,5 +1,5 @@
 rem -------------------------------------------------------------------------------------------------
-rem  Use the Hubitat Maker API to interrogate the value of virtual switch  (Alexa show me YouTube
+rem  Use the Hubitat Maker API to interrogate the value of virtual switch  (Alexa show me the videos)
 rem  Use curl in Windows to execute a URL for the specific device in Hubitat - device ID: 1653 
 rem  The results are a string that can be read from StdOut
 rem -------------------------------------------------------------------------------------------------
