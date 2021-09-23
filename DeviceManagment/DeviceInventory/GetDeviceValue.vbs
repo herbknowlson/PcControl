@@ -75,7 +75,7 @@ rem  Return the the value or NOT FOUND
 rem ==================================================================================   
 Function getDeviceValue (devId, searchFor)
   Set oShell = WScript.CreateObject ("WScript.shell")
-  curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/"&devId&"?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+  curlCommand = "curl http://192.168.1.103/apps/api/1376/devices/"&devId&"?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
   Set oExec = oShell.Exec(curlCommand)
 
   Do While oExec.Status = 0

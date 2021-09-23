@@ -31,8 +31,7 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   cscript %myPath%"\PcControl\SecurityStatus\RollCallSecurityStatus.vbs"
   cscript %myPath%"\PcControl\AlexaMoveTheMouse\RollCallReolink.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallPhotos.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallYouTube.vbs"
+ 
  
   cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionDETECTED.vbs"
   cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionSTOPPED.vbs"

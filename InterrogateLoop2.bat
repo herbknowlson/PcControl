@@ -28,16 +28,17 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 2
   ECHO =============================================================================
-
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallWeather.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCameras.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\BackDoorOPEN.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\BackDoorCLOSED.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\FrontDoorOPEN.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\FrontDoorCLOSED.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\GarageDoorOPEN.vbs"
+  rem cscript %myPath%"\PcControl\SecurityLog\GarageDoorCLOSED.vbs"
   
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallMusic.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallLindaMusic.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallMenu.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallSecurityLog.vbs"
+  rem cscript %myPath%\PcControl\Wyze\RollCallWyzeCam.vbs
+  rem cscript %myPath%"\PcControl\RestartTheLoops\InterrogateRestartTheLoops.vbs
+  
 
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCalendar.vbs"
 
   ECHO =============================================================================
   ECHO                          END LOOP 2

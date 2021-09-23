@@ -16,8 +16,8 @@ if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
 )
 
-START %myPath%"\PcControl\InterrogateLoop2.bat - Shortcut.lnk"
-START %myPath%"\PcControl\InterrogateLoop3.bat - Shortcut.lnk"
+rem START %myPath%"\PcControl\InterrogateLoop2.bat - Shortcut.lnk"
+rem START %myPath%"\PcControl\InterrogateLoop3.bat - Shortcut.lnk"
 
 :start
 if %executionPaused%=="YES" (
@@ -30,16 +30,18 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 1
   ECHO =============================================================================
- 
-  cscript %myPath%"\PcControl\SecurityLog\BackDoorOPEN.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\BackDoorCLOSED.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\FrontDoorOPEN.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\FrontDoorCLOSED.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\GarageDoorOPEN.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\GarageDoorCLOSED.vbs"
-  cscript %myPath%\PcControl\Wyze\RollCallWyzeCam.vbs
-  cscript %myPath%"\PcControl\RestartTheLoops\InterrogateRestartTheLoops.vbs
   
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCalendar.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallCameras.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallLindaMusic.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallMenu.vbs"
+  
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallPhotos.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallSecurityLog.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallWeather.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallYouTube.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallMusic1.vbs"
+
   ECHO =============================================================================
   ECHO                         END LOOP 1
   ECHO =============================================================================

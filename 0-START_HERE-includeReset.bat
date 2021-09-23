@@ -6,6 +6,7 @@ rem Note: This is the parent process set the envirnmental variables
 set LOOP_TIMEOUT=3
 set myPath=D:\Dropbox\gitHub
 rem set myPath=C:\Users\herbk\Dropbox\gitHub
+set hubitatIp=http://192.168.1.103/
 
 rem -----------------------------------------------------------
 rem         One time actions to perform outside the loop
