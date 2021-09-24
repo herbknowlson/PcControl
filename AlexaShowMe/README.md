@@ -2,9 +2,9 @@
 Control your PC with your voice or smart phone (Hubitat app). 
 
 ## Popular functions
-Alexa show me the weather
-Alexa show me Linda's music
-Alexa move the mouse
+- Alexa show me the weather
+-Alexa show me Linda's music
+- Alexa move the mouse
 
 ## Uses
 Windows PC batch file running a (Continuous loop) 
