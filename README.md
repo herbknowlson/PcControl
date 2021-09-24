@@ -1,5 +1,5 @@
-#PcControl
-Description -
+# PcControl
+## Description
 Do things using a computer in addition to your Hubitat hub. 
 Control your computer and Hubitat using a remote, Hubitat app, Alexa, a timer etc.
 
@@ -9,27 +9,27 @@ Note: this is different than simple controlling the computer with a remote contr
 
 Types of computer control -
 
-1 - Control PC with a remote
+1. - Control PC with a remote
 
-2 - Control smart devices with a remote and a computer
+2. - Control smart devices with a remote and a computer
 
-3 - Control PC with voice or smart phone (Hubitat app)
+3. - Control PC with voice or smart phone (Hubitat app)
 
-4 - Control PC with Timed actions
+4. - Control PC with Timed actions
 
-References -
-VBS stuff
-Hubitat - Maker API
-Hubitat - Lighting control with Maker API
-Write a new row to a Google sheet
-Smart home action timer
-Smart home dashboard and utilities
-Computer - github
-Understand restart the loops
-Using remote modes
+## References
+- VBS stuff
+- Hubitat - Maker API
+- Hubitat - Lighting control with Maker API
+- Write a new row to a Google sheet
+- Smart home action timer
+- Smart home dashboard and utilities
+- Computer - github
+- Understand restart the loops
+- Using remote modes
 
 
-How does it work -
+## How does it work
 The computer is waiting for something to change in Hubitat 
 When the change occurs Then the computer does something
 
