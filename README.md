@@ -1,5 +1,5 @@
 # PcControl
-Description -
+## Description -
 Do things using a computer in addition to your Hubitat hub. 
 Control your computer and Hubitat using a remote, Hubitat app, Alexa, a timer etc.
 
