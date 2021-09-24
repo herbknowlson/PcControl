@@ -29,7 +29,7 @@ Types of computer control -
 - Using remote modes
 
 
-How does it work -
+## How does it work
 The computer is waiting for something to change in Hubitat 
 When the change occurs Then the computer does something
 
