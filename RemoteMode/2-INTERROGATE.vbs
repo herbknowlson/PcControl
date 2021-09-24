@@ -8,14 +8,14 @@ Wscript.Echo "                  " & Wscript.ScriptName
 WScript.Echo "-------------------------------------------------------------"
 Wscript.Echo "Script path: " & Wscript.ScriptFullName
 
-Dim myPath
 myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
 Wscript.Echo myPath
+hubitatIp = CreateObject("WScript.Shell").Environment("Process").Item("hubitatIp")
 
 rem -------------------------------------------------------------------------------------------------
 rem                                     Get current value from Hubitat API
 rem ------------------------------------------------------------------------------------------------
-curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1667?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+curlCommand = "curl " + hubitatIp + "apps/api/1376/devices/1667?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
 Set oShell = WScript.CreateObject ("WScript.shell")
 Set oExec = oShell.Exec(curlCommand)
 
@@ -51,7 +51,7 @@ else
   rem =============================================================================
   rem                     Use curl to turn the virtual switch off
   rem =============================================================================
-  curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1667/off?access_token=6c5d7775-2d6a-4786-ae45- 3942346fd0d5"
+  curlCommand = "curl " + hubitatIp + "apps/api/1376/devices/1667/off?access_token=6c5d7775-2d6a-4786-ae45- 3942346fd0d5"
   oShell.Exec(curlCommand)
   
 rem -----------------------------------------------

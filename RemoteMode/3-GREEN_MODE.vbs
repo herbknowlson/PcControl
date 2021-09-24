@@ -2,8 +2,8 @@ Dim myPath
 myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
 rem WScript.Echo myPath 
 rem Choose your path:
-myPath = "D:\Dropbox\PcControl\RemoteMode\"
-rem myPath = "C:\Users\herbk\Dropbox\PcControl\RemoteMode\"
+myPath = "D:\Dropbox\gitHub\PcControl\RemoteMode\"
+rem myPath = "C:\Users\herbk\Dropbox\gitHub\PcControl\RemoteMode\"
 
 Set oShell = WScript.CreateObject ("WScript.shell")
 oShell.Run myPath+"GreenLine.jpg",0,false

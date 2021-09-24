@@ -16,8 +16,8 @@ if NOT %executionPaused%=="YES" (
   echo ----------------------------------------------------------------
 )
 
-rem START %myPath%"\PcControl\InterrogateLoop2.bat - Shortcut.lnk"
-rem START %myPath%"\PcControl\InterrogateLoop3.bat - Shortcut.lnk"
+  START %myPath%"\PcControl\InterrogateLoop2.bat - Shortcut.lnk"
+  START %myPath%"\PcControl\InterrogateLoop3.bat - Shortcut.lnk"
 
 :start
 if %executionPaused%=="YES" (
@@ -30,24 +30,26 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 1
   ECHO =============================================================================
-  
+
+  cscript %myPath%"\PcControl\AlexaMoveTheMouse\RollCallReolink.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallCalendar.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallCameras.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallLindaMusic.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallMenu.vbs"
-  
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallPhotos.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallSecurityLog.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallWeather.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallYouTube.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallMusic1.vbs"
-
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallDashboard.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallChrome.vbs"
+  
   ECHO =============================================================================
   ECHO                         END LOOP 1
   ECHO =============================================================================
   cscript %myPath%"\PcControl\Dashboard\updateLoop1Counter.vbs" 
 :skip_it
-  TIMEOUT %LOOP_TIMEOUT%
+  TIMEOUT 2
 
   set "hour=%time:~0,2%
   set "minute=%time:~3,2%

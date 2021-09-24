@@ -1,0 +1,10 @@
+hubitatIp = CreateObject("WScript.Shell").Environment("Process").Item("hubitatIp")
+
+"curl " + hubitatIp + "
+
+East
+rtsp://pghk2000:guitar01@192.168.1.112/live
+West
+rtsp://pghk2000:guitar01@192.168.1.114/live
+Porch
+rtsp://phhk2000:guitar01@192.168.1.113/live

@@ -29,18 +29,10 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 3
   ECHO =============================================================================
-  cscript %myPath%"\PcControl\SecurityStatus\RollCallSecurityStatus.vbs"
-  cscript %myPath%"\PcControl\AlexaMoveTheMouse\RollCallReolink.vbs"
- 
- 
-  cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionDETECTED.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionSTOPPED.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionDETECTED.vbs"
-  cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionSTOPPED.vbs"
-
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallChrome.vbs"
-  cscript %myPath%"\PcControl\AlexaShowMe\RollCallDashboard.vbs"
   
+  cscript %myPath%\PcControl\Wyze\RollCallWyzeCam.vbs
+  cscript %myPath%"\PcControl\SecurityStatus\RollCallSecurityStatus.vbs"
+  cscript %myPath%"\PcControl\RestartTheLoops\InterrogateRestartTheLoops.vbs
   cscript %myPath%"\PcControl\TimedAction\InterrogateSmartHomeActionNeeded.vbs"
 
   ECHO =============================================================================
@@ -48,7 +40,7 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   cscript %myPath%"\PcControl\Dashboard\updateLoop3Counter.vbs"
 :skip_it
-  TIMEOUT %LOOP_TIMEOUT%
+  TIMEOUT 10
 
   set "hour=%time:~0,2%
   set "minute=%time:~3,2%

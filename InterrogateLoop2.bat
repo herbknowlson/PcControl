@@ -28,24 +28,27 @@ if %executionPaused%=="YES" (
   ECHO =============================================================================
   ECHO                         START LOOP 2
   ECHO =============================================================================
-  rem cscript %myPath%"\PcControl\SecurityLog\BackDoorOPEN.vbs"
-  rem cscript %myPath%"\PcControl\SecurityLog\BackDoorCLOSED.vbs"
-  rem cscript %myPath%"\PcControl\SecurityLog\FrontDoorOPEN.vbs"
-  rem cscript %myPath%"\PcControl\SecurityLog\FrontDoorCLOSED.vbs"
-  rem cscript %myPath%"\PcControl\SecurityLog\GarageDoorOPEN.vbs"
-  rem cscript %myPath%"\PcControl\SecurityLog\GarageDoorCLOSED.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\BackDoorOPEN.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\BackDoorCLOSED.vbs"
   
-  rem cscript %myPath%\PcControl\Wyze\RollCallWyzeCam.vbs
-  rem cscript %myPath%"\PcControl\RestartTheLoops\InterrogateRestartTheLoops.vbs
+  cscript %myPath%"\PcControl\SecurityLog\FrontDoorOPEN.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\FrontDoorCLOSED.vbs"
   
 
+  cscript %myPath%"\PcControl\SecurityLog\GarageDoorOPEN.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\GarageDoorCLOSED.vbs"
 
+  cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionDETECTED.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\OutsideBackMotionSTOPPED.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionDETECTED.vbs"
+  cscript %myPath%"\PcControl\SecurityLog\OutsideFrontMotionSTOPPED.vbs"
+  
   ECHO =============================================================================
   ECHO                          END LOOP 2
   ECHO =============================================================================
- cscript %myPath%"\PcControl\Dashboard\updateLoop2Counter.vbs"
+  cscript %myPath%"\PcControl\Dashboard\updateLoop2Counter.vbs"
 :skip_it
-  TIMEOUT %LOOP_TIMEOUT%
+  TIMEOUT 5
 
   set "hour=%time:~0,2%
   set "minute=%time:~3,2%

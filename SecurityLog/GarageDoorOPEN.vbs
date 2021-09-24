@@ -8,12 +8,11 @@ Wscript.Echo "            Script name: " & Wscript.ScriptName
 WScript.Echo "-------------------------------------------------------------"
 Wscript.Echo "Script path: " & Wscript.ScriptFullName
 
-Dim myPath
 myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
 Wscript.Echo myPath
+hubitatIp = CreateObject("WScript.Shell").Environment("Process").Item("hubitatIp")
 
-Dim curlCMD
-curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1631?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+curlCommand = "curl "+ hubitatIp + "apps/api/1376/devices/1631?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
 Set oShell = WScript.CreateObject ("WScript.shell")
 Set oExec = oShell.Exec(curlCommand)
 
@@ -32,10 +31,10 @@ Loop
 If currentValue = "off" Then
   WScript.Echo "Nothing to do"
 else
-  WScript.Echo "Do something"
-  oShell.Run myPath+"\PcControl\SecurityLog\GarageDoorOPEN.bat - Shortcut.lnk",0
-  curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/1631/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+  WScript.Echo "Do something" 
+  curlCommand = "curl "+ hubitatIp + "apps/api/1376/devices/1631/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
   oShell.Exec(curlCommand)
+  oShell.Run myPath+"\PcControl\SecurityLog\GarageDoorOPEN.bat - Shortcut.lnk",0
 End If
 
 WScript.Quit
