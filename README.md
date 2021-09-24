@@ -9,13 +9,13 @@ Note: this is different than simple controlling the computer with a remote contr
 
 Types of computer control -
 
-1 - Control PC with a remote
+1. - Control PC with a remote
 
-2 - Control smart devices with a remote and a computer
+2. - Control smart devices with a remote and a computer
 
-3 - Control PC with voice or smart phone (Hubitat app)
+3. - Control PC with voice or smart phone (Hubitat app)
 
-4 - Control PC with Timed actions
+4. - Control PC with Timed actions
 
 References -
 VBS stuff
