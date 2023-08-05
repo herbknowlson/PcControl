@@ -1,6 +1,6 @@
 @ECHO OFF
 rem ------------------------------------------------
-rem Loop the interrogate script
+rem  Loop the interrogate script
 rem ------------------------------------------------
 
 :start
