@@ -1,9 +1,13 @@
+WScript.Echo "-------------------------------------------------------------"
+Wscript.Echo "            Script name: " & Wscript.ScriptName
+WScript.Echo "-------------------------------------------------------------"
+Wscript.Echo "Script path: " & Wscript.ScriptFullName
 Dim myPath
 myPath = CreateObject("WScript.Shell").Environment("Process").Item("myPath")
 rem WScript.Echo myPath 
 rem Choose your path:
-rem myPath = "D:\Dropbox"
-rem myPath = "C:\Users\herbk\Dropbox"
+rem myPath = "D:\Dropbox\gitHub"
+rem myPath = "C:\Users\herbk\Dropbox\gitHub"
 rem =============================================================================
 rem          This script is called multiple times by 2-LOOP.vbs
 rem =============================================================================
@@ -15,6 +19,7 @@ rem ============================================================================
 rem deviceID = Wscript.Arguments(0)
 rem fieldName = Wscript.Arguments(1)
 rem attributeName  = Wscript.Arguments(2)
+hubitatIp = CreateObject("WScript.Shell").Environment("Process").Item("hubitatIp")
 
 deviceID = CreateObject("WScript.Shell").Environment("Process").Item("deviceID")
 fieldName = CreateObject("WScript.Shell").Environment("Process").Item("fieldName")
@@ -66,7 +71,9 @@ rem ============================================================================
 Function getDeviceValue (devId, searchFor)
   rem Set oShell = WScript.CreateObject ("WScript.shell")
   rem WScript.Echo fieldName
-  curlCommand = "curl http://192.168.2.84/apps/api/1376/devices/"&devId&"?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+  rem curlCommand = "curl " + hubitatIp + apps/api/1376/devices/"&devId&"?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+  curlCommand = "curl http://192.168.1.103/apps/api/1376/devices/"&devId&"?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+  WScript.Echo curlCommand
   rem Set oExec = oShell.Exec(curlCommand)
 
   rem =================================================================================================

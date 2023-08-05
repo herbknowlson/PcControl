@@ -1,6 +1,11 @@
 rem ==================================================================================
 rem                    Get the battery level for various devices
 rem ==================================================================================
+WScript.Echo "-------------------------------------------------------------"
+Wscript.Echo "            Script name: " & Wscript.ScriptName
+WScript.Echo "-------------------------------------------------------------"
+Wscript.Echo "Script path: " & Wscript.ScriptFullName
+
 Set oShell = WScript.CreateObject ("WScript.shell")
 fieldName = "label"
 attributeName = "battery"
@@ -76,7 +81,7 @@ rem ------------------------------------------------------------------
   wshSystemEnv("deviceID") = deviceID
   wshSystemEnv("fieldName") = fieldName
   wshSystemEnv("attributeName") = attributeName
-  oShell.Run myPath+"\PcControl\DeviceManagment\GetValueBatteryLevel\GetDeviceValue.vbs",0,true
+  oShell.Run myPath+"\PcControl\DeviceManagment\GetValueBatteryLevel\GetDeviceValue.vbs",1,true
 Loop
 
 f.Close                            

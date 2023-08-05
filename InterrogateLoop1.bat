@@ -43,6 +43,8 @@ if %executionPaused%=="YES" (
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallMusic1.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallDashboard.vbs"
   cscript %myPath%"\PcControl\AlexaShowMe\RollCallChrome.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCallGuitarFusion.vbs"
+  cscript %myPath%"\PcControl\AlexaShowMe\RollCalliTunes.vbs"
   
   ECHO =============================================================================
   ECHO                         END LOOP 1

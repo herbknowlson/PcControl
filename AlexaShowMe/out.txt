@@ -1,0 +1,1 @@
+{"id":"1683","name":"Alexa show me guitar fusion music","label":"Alexa show me guitar fusion music","type":"Virtual Switch","attributes":[{"name":"switch","currentValue":"on","dataType":"ENUM","values":["on","off"]}],"capabilities":["Switch",{"attributes":[{"name":"switch","dataType":null}]},"Refresh"],"commands":["off","on","refresh"]}

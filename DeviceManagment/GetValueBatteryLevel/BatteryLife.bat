@@ -11,7 +11,7 @@ start /MIN microsoft-edge:"https://docs.google.com/forms/d/e/1FAIpQLScceog-Z4gO7
 
 timeout 1
 powershell (ps msedge).CloseMainWindow()
-rem pause
+pause
 rem timeout 30
 
 

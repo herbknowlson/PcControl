@@ -54,7 +54,9 @@ attributeName = "battery"
 rem ==================================================================================
 rem                        Read data file for the device IDs
 rem ==================================================================================
-dataFile = fullPath+"\DATA3.txt"
+rem dataFile = fullPath+"\DATA1_single.txt"
+rem dataFile = fullPath+"\DATA2_bad.txt"
+dataFile = fullPath+"\DATA3_all.txt"
 Set fso = CreateObject("Scripting.FileSystemObject")
 Set f = fso.OpenTextFile(dataFile)
 

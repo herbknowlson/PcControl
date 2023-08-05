@@ -1,4 +1,4 @@
-9/22/2021 6:27:38 PM
+9/27/2021 10:54:51 PM
 device ID=35      label = "Living room outlet 1 - tp he"                   
 device ID=42      label = "HubLink - he"                                 
 device ID=47      label = "Master bath dimmer - tp he"                     
@@ -39,7 +39,6 @@ device ID=711     label = "Bed room light 1 - tp he"
 device ID=712     label = "Bed room light 2 - tp he"                       
 device ID=720     label = "Entry hall light 1 - tp he"                     
 device ID=721     label = "Entry hall light 2 - tp he"                     
-device ID=722     label = NOT_FOUND                                 
 device ID=723     label = "Bed room button - he"                           
 device ID=725     label = "Outside front light 1 - tp he"                  
 device ID=726     label = "Outside front garage light - tp he"             
@@ -75,7 +74,7 @@ device ID=1544    label = "Outside garage door toggle"
 device ID=1609    label = "Living room group"                              
 device ID=1612    label = "Garage virtual switch"                          
 device ID=1613    label = "Security intrusion "                            
-device ID=1614    label = "Lightning control button"                       
+device ID=1614    label = "Lighting control button"                        
 device ID=1615    label = "Lighting level increase "                       
 device ID=1616    label = "Lighting level decrease"                        
 device ID=1617    label = "Lighting level set"                             
@@ -121,4 +120,5 @@ device ID=1672    label = "Alexa show me Chrome"
 device ID=1673    label = "Alexa show me the dashboard"                    
 device ID=1674    label = "Music room light 1 - tp he"                     
 device ID=1675    label = "Office light 1 - tp he"                         
+device ID=1683    label = "Alexa show me guitar fusion music"              
 deviceCount = 122
