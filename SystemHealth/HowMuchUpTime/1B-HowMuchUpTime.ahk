@@ -1,9 +1,6 @@
 ﻿;========================================
 ;  1B-HowMuchUpTime.ahk
 ;========================================
-;
-;   
-;
 ; Open Orbi admin Website and navigate
 ; until you can retrieve the uptime
 ; write the results to a file
