@@ -1,0 +1,12 @@
+
+   Speedtest by Ookla
+
+      Server: VGI Technology, Inc. - Horseshoe Bay, TX (id: 49670)
+         ISP: Spectrum
+Idle Latency:    31.64 ms   (jitter: 10.72ms, low: 26.18ms, high: 50.28ms)
+    Download:   117.54 Mbps (data used: 132.5 MB)                                                   
+                160.39 ms   (jitter: 50.57ms, low: 29.50ms, high: 313.33ms)
+      Upload:    11.73 Mbps (data used: 13.2 MB)                                                   
+                 44.10 ms   (jitter: 13.64ms, low: 26.71ms, high: 330.58ms)
+ Packet Loss:     0.0%
+  Result URL: https://www.speedtest.net/result/c/d31b683c-e6f6-4537-a316-9ca8f7b5e666

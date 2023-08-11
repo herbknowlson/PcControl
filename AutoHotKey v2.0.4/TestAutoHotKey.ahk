@@ -30,6 +30,27 @@
     else
         Run "Notepad"
 }
+;========================================
+; Open a file in notepad
+;
+; uses SplitPath Path [, &OutFileName, &OutDir, &OutExtension, &OutNameNoExt, &OutDrive]
+;========================================
+!a::      ; press Alt+a to execute the hotkey
+{
+    myPath := "C:\Users\herbk\Dropbox\gitHub\PcControl\AutoHotKey v2.0.4\results.txt"
+ 
+    Run  "notepad.exe " myPath 
+    ; To fetch only the bare filename from the above:
+    SplitPath myPath, &fName
+    If WinExist(fName)
+        WinActivate 
+    Return
+}
+;========================================
+; Open calculator
+;========================================
+!Numpad0:: Run "calc.exe"  ; Alt+Numpad zero
+
 
 ;========================================
 ; Open CMD and run Speed test
