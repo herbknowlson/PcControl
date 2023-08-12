@@ -1,8 +1,0 @@
-
-   Speedtest by Ookla
-
-      Server: Spectrum - Austin, TX (id: 16965)
-         ISP: Spectrum
-Idle Latency:    41.75 ms   (jitter: 9.97ms, low: 33.72ms, high: 48.77ms)
-    Download:   117.55 Mbps (data used: 142.9 MB)                                                   
-                158.66 ms   (jitter: 50.29ms, low: 26.95ms, high: 248.07ms)

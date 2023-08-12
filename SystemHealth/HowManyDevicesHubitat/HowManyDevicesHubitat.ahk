@@ -1,58 +1,50 @@
 ﻿;========================================
-;  1B-HowMuchUpTime.ahk
+;  HowManyDevicesHubitat.ahk
 ;========================================
-; Open Orbi admin Website and navigate
-; until you can retrieve the uptime
-; write the results to a file
+;
 ;----------------------------------------
 ;^!o::  ; Ctrl+Alt+O
 {
-   filePath := "C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\HowMuchUpTime\results.txt"
-   
-   Run "https://192.168.1.1/#Dashboard"
-   Sleep 2000
-   ;----------------
-   ; login
-   ;----------------
-   Send "admin"
-   Sleep 500
-   Send "{Tab}"
-   Send "Guitar01234"
-   Sleep 500
-   Send "{Enter}"
-   Sleep 1000
+   filePath := "C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\HowManyDevicesHubitat\results.txt"
+
    ;--------------------------
-   ; close splash screen
+   ; go to devices list
    ;-------------------------
-   MouseMove 1301, 222
-   Sleep 500
-   Send "{Click}"
+   Run "http://192.168.1.64/device/list"
+   Sleep 3000  
+  
    ;--------------------------
-   ; select the Advanced tab
-   ;-------------------------
-   MouseMove 144, 206
+   ; remove previous search, click the X
+   ;-------------------------- 
+   MouseMove 1579,  223
    Sleep 500
-   Send "{Click}"
-   Sleep 7000
-   ;-------------------------
-   ; select SHOW STATISTICS
+   Send "{Click}"   
+   Sleep 1000   
+   ;--------------------------
+   ; need to get to the bottom to see the number of devices
    ;-------------------------   
-   MouseMove 720, 453
+   Send "z"  ; send z to search 
+   ;--------------------------
+   ; remove previous search, click the X
+   ;--------------------------    
+   MouseMove 1579,  223
    Sleep 500
-   Send "{Click}"
-   Sleep 2000
+   Send "{Click}"   
+   Sleep 1000 
+   
    ;-------------------------
-   ; select text
+   ; select text with mouse drag
    ;-------------------------    
-   MouseClickDrag "L", 635, 172, 746, 172
-   Sleep 500
+   MouseClickDrag "L", 280, 947, 500, 948
+   Sleep 500  
+      
    ;-------------------------
    ; copy to clipboard
    ;-------------------------    
    Send "^c"
    Sleep 500
    ;-------------------------
-   ; close STATISTICS
+   ; close the app
    ;-------------------------    
    Send "!{F4}"   ;Alt + F4 
    ;-------------------------
@@ -96,8 +88,12 @@
    ;-------------------------
    ; close Browser
    ;-------------------------
-   Send "{Click}" ;give browser window the focus
-   Send "!{F4}"   ;Alt + F4 
+   ;Send "{Click}" ;give browser window the focus
+   ;Send "!{F4}"   ;Alt + F4   
+   
+   ;xxxxxxxxxxxxxxxxxx
+   ;ExitApp
+   ;xxxxxxxxxxxxxxxxxx
 }
 
 
