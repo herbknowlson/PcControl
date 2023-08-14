@@ -1,14 +1,14 @@
 Sat 08/12/2023 
- 1:16:00.95  
+ 1:26:54.91  
 
    Speedtest by Ookla
 
       Server: VGI Technology, Inc. - Horseshoe Bay, TX (id: 49670)
          ISP: Spectrum
-Idle Latency:    32.09 ms   (jitter: 13.00ms, low: 24.98ms, high: 44.42ms)
-    Download:   118.13 Mbps (data used: 142.6 MB)                                                   
-                136.66 ms   (jitter: 39.47ms, low: 34.92ms, high: 226.23ms)
-      Upload:    11.83 Mbps (data used: 12.5 MB)                                                   
-                 48.96 ms   (jitter: 17.48ms, low: 26.26ms, high: 390.86ms)
+Idle Latency:    30.12 ms   (jitter: 6.59ms, low: 27.46ms, high: 45.67ms)
+    Download:   118.10 Mbps (data used: 140.2 MB)                                                   
+                156.57 ms   (jitter: 49.50ms, low: 33.98ms, high: 249.11ms)
+      Upload:    11.72 Mbps (data used: 11.2 MB)                                                   
+                 50.85 ms   (jitter: 17.80ms, low: 29.19ms, high: 370.46ms)
  Packet Loss:     0.0%
-  Result URL: https://www.speedtest.net/result/c/b1cfc7e0-03c1-4f8c-9630-946b6d510d6d
+  Result URL: https://www.speedtest.net/result/c/488e62c9-e85f-4b26-96bb-1806ee451bac

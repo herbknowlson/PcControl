@@ -25,6 +25,6 @@ rem  Format the result
 rem --------------------------------------------------------------
 cscript C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\SpeedTest\5-FormatResults.vbs
 rem start /wait C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\SpeedTest\5-FormatResults.vbs
-rem TIMEOUT 10
+TIMEOUT 10
 rem PAUSE
 rem exit

@@ -8,7 +8,7 @@ rem  theFile = "output1695.txt"
   Set f = fso.OpenTextFile(theFile)
     strLine = f.ReadLine
     currentValue = Replace(strLine," ","+")
-    WScript.Echo "currentValue = " & currentValue
+    rem WScript.Echo "currentValue = " & currentValue
     rem ------------------=-----------------------------
     rem Set the Variable in Hubitat
     rem Note: you will need the device(HowMuchUpTime) ID(2087)

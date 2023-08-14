@@ -1,5 +1,5 @@
 rem -----------------------------------------------------------
-rem  Use Hubitat to control running a Speed Test from a PC 
+rem  Use Hubitat to control running a Speed Test on your PC 
 rem -----------------------------------------------------------
 rem      Note: This script will be on the PC
 rem

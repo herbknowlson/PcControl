@@ -10,8 +10,8 @@
    ;--------------------------
    ; go to devices list
    ;-------------------------
-   Run "http://192.168.1.64/device/list"
-   Sleep 3000  
+   Run "http://192.168.1.88/device/list"
+   Sleep 5000  
   
    ;--------------------------
    ; remove previous search, click the X

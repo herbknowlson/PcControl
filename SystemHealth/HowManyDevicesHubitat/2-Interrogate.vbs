@@ -26,7 +26,7 @@ Set oShell = WScript.CreateObject ("WScript.shell")
 rem -------------------------------------
 rem Determine if run switch is off or on
 rem -------------------------------------
-curlCommand = "curl http://192.168.1.64/apps/api/1376/devices/2074?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
+curlCommand = "curl http://192.168.1.88/apps/api/1376/devices/2074?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"
 Set oExec = oShell.Exec(curlCommand)
 
 Do While oExec.Status = 0
@@ -65,10 +65,10 @@ rem -----------------------------
   rem -------------------------
   rem turn the results switch OFF
   rem -------------------------
-  curlCommand = "curl http://192.168.1.64/apps/api/1376/devices/2073/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"  
+  curlCommand = "curl http://192.168.1.88/apps/api/1376/devices/2073/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"  
   Set oExec = oShell.Exec(curlCommand)
   Set shell = CreateObject("WScript.Shell")
-  shell.CurrentDirectory = "C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\HowMuchUpTime\"
+  shell.CurrentDirectory = "C:\Users\herbk\Dropbox\gitHub\PcControl\SystemHealth\HowManyDevicesHubitat\"
 rem -----------------------------------------------------------------------------------------
 rem Run Speed Test from a batch file
 rem 
@@ -88,7 +88,7 @@ rem
 rem -------------------------
 rem turn the run switch OFF
 rem -------------------------
-  curlCommand = "curl http://192.168.1.64/apps/api/1376/devices/2074/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"  
+  curlCommand = "curl http://192.168.1.88/apps/api/1376/devices/2074/off?access_token=6c5d7775-2d6a-4786-ae45-3942346fd0d5"  
   oShell.Exec(curlCommand)
 End If
 rem
